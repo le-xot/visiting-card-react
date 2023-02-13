@@ -1,15 +1,15 @@
 import { Center, Text } from '@mantine/core'
 import { Layout } from '../components/layout'
 
-export default function Home() {
+export default function GamesBlog() {
   return (
-    <Layout title="Homepage">
+    <Layout title="Games blog">
       <Center>
         <Text
           size={'lg'}
           p={'100px'}
         >
-          This is Home Page
+          This is Games blog
         </Text>
       </Center>
     </Layout>
