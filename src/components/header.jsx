@@ -5,10 +5,12 @@ import { IconChevronDown, IconHome } from '@tabler/icons'
 export function Header() {
   return (
     <>
-      <Container>
+      <Container
+        bg={'RGB(26,27,30)'}
+        miw={'100vw'}
+      >
         <Flex
           p={'1rem'}
-          mih={50}
           gap="sm"
           justify="center"
           align="flex-start"
@@ -17,19 +19,18 @@ export function Header() {
         >
           <Link href={'/'}>
             <Button
+              variant="subtle"
               color="gray"
-              variant="outline"
               radius="xs"
-              size="lg"
               w="80px"
             >
-              <IconHome w={'100%'} />
+              <IconHome />
             </Button>
           </Link>
 
           <Menu
+            variant="subtle"
             color="gray"
-            variant="outline"
             withArrow
             trigger="hover"
             openDelay={100}
@@ -39,17 +40,15 @@ export function Header() {
               <Button
                 color="dark"
                 radius="xs"
-                size="lg"
                 w="200px"
               >
                 <Center>
                   Entertainment
-                  <IconChevronDown></IconChevronDown>
+                  <IconChevronDown size={18}></IconChevronDown>
                 </Center>
               </Button>
             </Menu.Target>
             <Menu.Dropdown>
-              <Menu.Item>Steam profile</Menu.Item>
               <Menu.Item
                 component="a"
                 href={'/games-blog'}
@@ -66,24 +65,24 @@ export function Header() {
           </Menu>
           <Link href={'/programming'}>
             <Button
+              variant="subtle"
               color="gray"
-              variant="outline"
               radius="xs"
-              size="lg"
               w="200px"
             >
               Programming
             </Button>
           </Link>
-          <Button
-            color="gray"
-            variant="outline"
-            radius="xs"
-            size="lg"
-            w="200px"
-          >
-            Content
-          </Button>
+          <Link href={'/content'}>
+            <Button
+              variant="subtle"
+              color="gray"
+              radius="xs"
+              w="200px"
+            >
+              Content
+            </Button>
+          </Link>
         </Flex>
       </Container>
     </>

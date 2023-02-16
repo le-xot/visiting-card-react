@@ -1,4 +1,4 @@
-import { Button, Container, Flex } from '@mantine/core'
+import { Avatar, Button, Container, Flex, Badge } from '@mantine/core'
 import {
   IconBrandGithub,
   IconBrandInstagram,
@@ -9,58 +9,85 @@ import {
 
 export function Footer() {
   return (
-    <Container>
+    <Container
+      miw={'100%'}
+      bg={'RGB(26,27,30)'}
+    >
       <Flex
-        p={'1rem'}
-        bottom={0}
-        right={0}
-        gap="xs"
-        pos={'fixed'}
-        justify="flex-end"
-        align="flex-end"
-        direction="row"
-        wrap="wrap"
+        align="center"
+        h="inherit"
+        justify="space-between"
       >
-        <Button
-          w={60}
-          component="a"
-          href="https://t.me/le_xot"
-          target="_blank"
+        <Flex
+          justify="flex-start"
+          align="center"
+          gap="xs"
         >
-          <IconBrandTelegram w={'100%'} />
-        </Button>
-        <Button
-          w={60}
-          component="a"
-          href="https://steamcommunity.com/id/le_xot/"
-          target="_blank"
+          <Avatar src="./avatar.png"></Avatar>
+          <Badge>powered by le_xot</Badge>
+        </Flex>
+        <Flex
+          p={'1rem'}
+          m={0}
+          bottom={0}
+          right={0}
+          gap="xs"
+          justify="flex-end"
+          align="flex-end"
+          direction="row"
+          wrap="wrap"
         >
-          <IconBrandSteam w={'100%'} />
-        </Button>
-        <Button
-          w={60}
-          component="a"
-          href="https://www.instagram.com/le_xot/"
-          target="_blank"
-        >
-          <IconBrandInstagram size={'100%'} />
-        </Button>
-        <Button
-          w={60}
-          component="a"
-          href="https://github.com/le-xot"
-          target="_blank"
-        >
-          <IconBrandGithub size={'100%'} />
-        </Button>
-        <Button
-          w={60}
-          component="a"
-          href="https://vk.com/le_xot"
-          target="_blank"
-        >
-          <IconBrandVk size={'100%'} />
-        </Button>
+          <Button
+            variant="subtle"
+            color="gray"
+            w={60}
+            component="a"
+            href="https://t.me/le_xot"
+            target="_blank"
+          >
+            <IconBrandTelegram w={'100%'} />
+          </Button>
+          <Button
+            variant="subtle"
+            color="gray"
+            w={60}
+            component="a"
+            href="https://steamcommunity.com/id/le_xot/"
+            target="_blank"
+          >
+            <IconBrandSteam w={'100%'} />
+          </Button>
+          <Button
+            variant="subtle"
+            color="gray"
+            w={60}
+            component="a"
+            href="https://www.instagram.com/le_xot/"
+            target="_blank"
+          >
+            <IconBrandInstagram size={'100%'} />
+          </Button>
+          <Button
+            variant="subtle"
+            color="gray"
+            w={60}
+            component="a"
+            href="https://github.com/le-xot"
+            target="_blank"
+          >
+            <IconBrandGithub size={'100%'} />
+          </Button>
+          <Button
+            variant="subtle"
+            color="gray"
+            w={60}
+            component="a"
+            href="https://vk.com/le_xot"
+            target="_blank"
+          >
+            <IconBrandVk size={'100%'} />
+          </Button>
+        </Flex>
       </Flex>
     </Container>
   )
