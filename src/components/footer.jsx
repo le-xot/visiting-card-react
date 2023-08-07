@@ -1,4 +1,4 @@
-import { Avatar, Button, Container, Flex, Badge } from '@mantine/core'
+import { Avatar, Badge, Button, Container, Flex } from '@mantine/core'
 import {
   IconBrandGithub,
   IconBrandInstagram,
@@ -10,7 +10,7 @@ import {
 export function Footer() {
   return (
     <Container
-      miw={'100%'}
+      miw={'100vw'}
       bg={'RGB(26,27,30)'}
     >
       <Flex
@@ -24,7 +24,7 @@ export function Footer() {
           gap="xs"
         >
           <Avatar src="./avatar.png"></Avatar>
-          <Badge>powered by le_xot</Badge>
+          <Badge>le_xot</Badge>
         </Flex>
         <Flex
           p={'1rem'}

@@ -1,30 +1,26 @@
 import Link from 'next/link'
 import { Button, Center, Container, Flex, Menu } from '@mantine/core'
-import { IconChevronDown, IconHome } from '@tabler/icons'
+import { IconChevronDown } from '@tabler/icons'
 
 export function Header() {
   return (
-    <>
       <Container
         bg={'RGB(26,27,30)'}
-        miw={'100vw'}
+        miw={'100%'}
       >
         <Flex
           p={'1rem'}
           gap="sm"
           justify="center"
           align="flex-start"
-          direction="row"
-          wrap="nowrap"
         >
           <Link href={'/'}>
             <Button
               variant="subtle"
               color="gray"
               radius="xs"
-              w="80px"
             >
-              <IconHome />
+              About me
             </Button>
           </Link>
 
@@ -40,7 +36,6 @@ export function Header() {
               <Button
                 color="dark"
                 radius="xs"
-                w="200px"
               >
                 <Center>
                   Entertainment
@@ -68,7 +63,6 @@ export function Header() {
               variant="subtle"
               color="gray"
               radius="xs"
-              w="200px"
             >
               Programming
             </Button>
@@ -78,13 +72,11 @@ export function Header() {
               variant="subtle"
               color="gray"
               radius="xs"
-              w="200px"
             >
               Content
             </Button>
           </Link>
         </Flex>
       </Container>
-    </>
   )
 }

@@ -14,6 +14,7 @@ export function Layout({ title, children }) {
       <Stack
         bg={'dark'}
         h="100vh"
+        w="100vw"
         align="center"
         justify="space-between"
         spacing="xs"
